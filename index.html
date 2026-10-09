@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Twitter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Mini Twitter</h1>
+    </header>
+
+    <div class="container">
+        <main>
+            <div class="create">
+                <h3>Share your thoughts!</h3>
+                <textarea id="postText" placeholder="Share something..."></textarea>
+                <button onclick="addPost()">Post</button>
+            </div>
+
+            <div id="posts">
+                <div class="post">
+                    <h3>Logith</h3>
+                    <p>Learning something new!</p>
+                    <button onclick="likePost(this)">Like <span>0</span></button>
+                    <button onclick="commentPost()">Comment</button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
